@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PILEM</title>
+	<link rel="icon" type="image/x-icon" href="img/Logo roll film.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/font-awesome.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/favorite.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<script src="js/bootstrap.bundle.min.js"></script>
+
+</head>
+<!-- Halaman Login Start -->
+<body>
+<section id="header">
+<div id="signup-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				   <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">SIGN UP</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+					<div class="modal-body">
+						
+						<form class="ps-3 pe-3" action="#">
+							<div class="mb-3">
+								<label for="username" class="form-label">Name</label>
+								<input class="form-control" type="email" id="username" required="" placeholder="Enter Your Name">
+							</div>
+							 
+							<div class="mb-3">
+								<label for="emailaddress" class="form-label">Email address</label>
+								<input class="form-control" type="email" id="emailaddress" required="" placeholder="Enter Your Email">
+							</div>
+							 
+							<div class="mb-3">
+								<label for="password" class="form-label">Password</label>
+								<input class="form-control" type="password" required="" id="password" placeholder="Enter Your Password">
+							</div>
+							 
+							<div class="mb-3">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input" id="customCheck1">
+									<label class="form-check-label" for="customCheck1">I accept <a href="#">Terms and Conditions</a></label>
+								</div> 
+							</div>
+							 
+							<div class="mb-3 text-center">
+							 <h6><a class="button_1 d-block" href="#">LOG IN</a></h6>
+							</div>
+						 
+						</form>
+					 
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- HALAM LOGIN END -->
+		<!-- NAVBAR START -->
+<nav class="navbar navbar-expand-md navbar-light" id="navbar_sticky">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-4 p-0 fw-bold text-white text-uppercase" 
+	href="index.html"><img src="img/Logo roll film.png" height="50px" alt=""><i</i>PILEM</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-0">
+	    
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link" href="news.html">News</a>
+        </li>
+		
+		<li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			Genre
+          </a>
+          <ul class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="..">Action</a></li>
+            <li><a class="dropdown-item" href="..">Romance</a></li>
+			<li><a class="dropdown-item" href="..">Comedy</a></li>
+			<li><a class="dropdown-item" href="..">Horor</a></li>
+			<li><a class="dropdown-item" href="..">Drama</a></li>
+			<li><a class="dropdown-item" href="..">Anime</a></li>
+			<li><a class="dropdown-item" href="..">Adventure</a></li>
+			<li><a class="dropdown-item" href="..">Superheroes</a></li>
+          </ul>
+        </li>
+		
+		<li class="nav-item">
+          <a class="nav-link" href="favorite.html">Favorite</a>
+        </li>
+		
+      </ul>
+	  <ul class="navbar-nav mb-0 ms-auto">
+	    
+        <li class="nav-item">
+            <select name="categories" class="form-select bg-light" required="">
+			<option value="">All Categories</option>
+			<option>Movie</option>
+			<option>Video</option>
+			<option>Tv-Show</option>
+			</select>
+			<div class="input-group">
+				<input type="text" class="form-control border-start-0" placeholder="Search Movie">
+				<span class="input-group-btn">
+					<button class="btn btn-primary bg_yell" type="button">
+						<i class="fa fa-search"></i> </button>
+				</span>
+		</div>
+        </li>
+		<li class="nav-item ms-3">
+          <a class="nav-link button" data-bs-toggle="modal" data-bs-target="#signup-modal" href="#">SIGN UP</a>
+        </li>		
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+<!-- Navbar end -->
+<!-- Card Tulisan Start -->
+<section id="upcome" class="p_3 bg-light">
+ <div class="container-xl">
+  <div class="row upcome_1 text-center">
+   <div class="col-md-12">
+     <h3 class="mb-0">YOUR FAVORITE</h3>
+	 <hr class="line me-auto ms-auto">
+	 <ul class="nav nav-tabs justify-content-center border-0 mb-0 mt-4">
+</ul>
+   </div>
+  </div>
+  <!-- Card Tulisan End -->
+  <!-- Card Movie Start -->
+  <div class="row upcome_2 mt-4">
+    <div class="tab-content">
+    <div class="tab-pane active" id="home">
+       <div class="upcome_2i row">
+	     <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/mission impossible 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">View Details</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">MISSION IMPOSSIBLE : GHOST PROTOCOL</a></h5>
+				<h6 class="text-muted">Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/the batman 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wath Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">THE BATMAN</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Action, Superheroes</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/wednesday 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">WEDNESDAY</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Drama, Horor</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/alien vs predators 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">ALIEN VS PREDATORS</a></h5>
+				<br>
+				<h6 class="text-muted">Horor, Action, Pshycology</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="upcome_2i row mt-4">
+	     <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/la la land 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">LA LA LAND</a></h5>
+				<br>
+				<h6 class="text-muted">Drama, Romance, Comedy</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/star wars 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wacth Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">STAR WARS : THE FORCE AWAKENS</a></h5>
+				<br>
+				<h6 class="text-muted">Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/howls moving castle 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">HOWLS MOVING CASTLE</a></h5>
+				<h6 class="text-muted">Drama, Anime, Romance</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/uncharted 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">UNCHARTED</a></h5>
+				<br>
+				<br>
+				<h6 class="text-muted">Adventure, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+    </div>
+	<div class="row upcome_2 mt-4">
+		<div class="tab-content">
+		<div class="tab-pane active" id="home">
+		   <div class="upcome_2i row">
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/mission impossible 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">View Details</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">MISSION IMPOSSIBLE : GHOST PROTOCOL</a></h5>
+					<h6 class="text-muted">Action</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/the batman 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wath Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">THE BATMAN</a></h5>
+					<br>
+					<br>
+					<br>
+					<h6 class="text-muted">Action, Superheroes</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/wednesday 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">WEDNESDAY</a></h5>
+					<br>
+					<br>
+					<br>
+					<h6 class="text-muted">Drama, Horor</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/alien vs predators 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">ALIEN VS PREDATORS</a></h5>
+					<br>
+					<h6 class="text-muted">Horor, Action, Pshycology</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		   <div class="upcome_2i row mt-4">
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/la la land 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">LA LA LAND</a></h5>
+					<br>
+					<h6 class="text-muted">Drama, Romance, Comedy</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/star wars 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wacth Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">STAR WARS : THE FORCE AWAKENS</a></h5>
+					<br>
+					<h6 class="text-muted">Action</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/howls moving castle 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">HOWLS MOVING CASTLE</a></h5>
+					<h6 class="text-muted">Drama, Anime, Romance</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+			 <div class="col-md-3">
+			  <div class="upcome_2i1 clearfix position-relative">
+			   <div class="upcome_2i1i clearfix">
+				<img src="img/uncharted 1.jpg" class="w-100" alt="abc">
+			   </div>
+			   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+				<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+				<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+			   </div>
+			  </div>
+			   <div class="upcome_2i_last bg-white p-3">
+				 <div class="upcome_2i_lasti row">
+				  <div class="col-md-9 col-9">
+				   <div class="upcome_2i_lastil">
+					<h5><a href="#">UNCHARTED</a></h5>
+					<br>
+					<br>
+					<h6 class="text-muted">Adventure, Action</h6>
+					<span class="col_red">
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star"></i>
+					 <i class="fa fa-star-o"></i>
+					</span>
+				   </div>
+				  </div>
+				  <div class="col-md-3 p-0 col-3">
+				   <div class="upcome_2i_lastir pt-3">
+					 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+				   </div>
+				  </div>
+				 </div>
+			   </div>
+			 </div>
+		   </div>
+		</div>
+		<div class="row upcome_2 mt-4">
+			<div class="tab-content">
+			<div class="tab-pane active" id="home">
+			   <div class="upcome_2i row">
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/mission impossible 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">View Details</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">MISSION IMPOSSIBLE : GHOST PROTOCOL</a></h5>
+						<h6 class="text-muted">Action</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/the batman 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wath Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">THE BATMAN</a></h5>
+						<br>
+						<br>
+						<br>
+						<h6 class="text-muted">Action, Superheroes</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/wednesday 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">WEDNESDAY</a></h5>
+						<br>
+						<br>
+						<br>
+						<h6 class="text-muted">Drama, Horor</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/alien vs predators 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">ALIEN VS PREDATORS</a></h5>
+						<br>
+						<h6 class="text-muted">Horor, Action, Pshycology</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+			   </div>
+			   <div class="upcome_2i row mt-4">
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/la la land 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">LA LA LAND</a></h5>
+						<br>
+						<h6 class="text-muted">Drama, Romance, Comedy</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/star wars 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wacth Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">STAR WARS : THE FORCE AWAKENS</a></h5>
+						<br>
+						<h6 class="text-muted">Action</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/howls moving castle 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">HOWLS MOVING CASTLE</a></h5>
+						<h6 class="text-muted">Drama, Anime, Romance</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+				 <div class="col-md-3">
+				  <div class="upcome_2i1 clearfix position-relative">
+				   <div class="upcome_2i1i clearfix">
+					<img src="img/uncharted 1.jpg" class="w-100" alt="abc">
+				   </div>
+				   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+					<h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+					<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+				   </div>
+				  </div>
+				   <div class="upcome_2i_last bg-white p-3">
+					 <div class="upcome_2i_lasti row">
+					  <div class="col-md-9 col-9">
+					   <div class="upcome_2i_lastil">
+						<h5><a href="#">UNCHARTED</a></h5>
+						<br>
+						<br>
+						<h6 class="text-muted">Adventure, Action</h6>
+						<span class="col_red">
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star"></i>
+						 <i class="fa fa-star-o"></i>
+						</span>
+					   </div>
+					  </div>
+					  <div class="col-md-3 p-0 col-3">
+					   <div class="upcome_2i_lastir pt-3">
+						 <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+					   </div>
+					  </div>
+					 </div>
+				   </div>
+				 </div>
+			   </div>
+			</div>
+    <div class="tab-pane" id="profile">
+	    <div class="upcome_2i row">
+	     <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Spongebobs 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">SPONGEBOB ANIMATED SERIES</a></h5>
+				<h6 class="text-muted">Animated, Family, Comedy</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Moon Knights.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">MOON KNIGHTS</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Superheroes, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Malificent 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">MALIFICENT</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Drama, Horor</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Teen Wolf 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">TEEN WOLF</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Drama, Romance</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="upcome_2i row mt-4">
+	     <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Breaking Bads 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">BREAKING BADS</a></h5>
+				<br>
+				<br>
+				<h6 class="text-muted">Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Squid Games 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">SQUID GAMES</a></h5>
+				<br>
+				<br>
+				<h6 class="text-muted">Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Decendants Of The Sun 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">DECENDANTS OF THE SUN</a></h5>
+				<h6 class="text-muted">Drama, Romance, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Violet Evergarden 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">VIOLET EVERGARDEN</a></h5>
+				<h6 class="text-muted">Drama, Action, Romance</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+	   
+    </div>
+    <div class="tab-pane" id="settings">
+         <div class="upcome_2i row">
+	     <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Tomb Raider 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">TOMB RAIDER</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Adventure, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Top Guns Maverick.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">TOP GUNS</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Drama, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/insidious 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wacth Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">INSIDIOUS</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Drama, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Shrek 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">SHREK</a></h5>
+				<br>
+				<br>
+				<br>
+				<h6 class="text-muted">Animated, Comedy</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+	   <div class="upcome_2i row mt-4">
+	     <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Cars 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Wacth Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">CARS 3</a></h5>
+				<br>
+				<h6 class="text-muted">Animated, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Spidermans no way home 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">SPIDERMANS NO WAY HOME</a></h5>
+				<h6 class="text-muted">Superheroes, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/James Bond Spectre 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">JAMES BOND : SPECTRE</a></h5>
+				<h6 class="text-muted">Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+		 <div class="col-md-3">
+		  <div class="upcome_2i1 clearfix position-relative">
+		   <div class="upcome_2i1i clearfix">
+		    <img src="img/Ghostbuster 1.jpg" class="w-100" alt="abc">
+		   </div>
+		   <div class="upcome_2i1i1 clearfix position-absolute top-0 text-center w-100">
+		    <h6 class="text-uppercase"><a class="button_1" href="#">View Trailer</a></h6>
+			<h6 class="text-uppercase mb-0"><a class="button_2" href="#">Watch Now</a></h6>
+		   </div>
+		  </div>
+		   <div class="upcome_2i_last bg-white p-3">
+		     <div class="upcome_2i_lasti row">
+			  <div class="col-md-9 col-9">
+			   <div class="upcome_2i_lastil">
+			    <h5><a href="#">GHOSTBUSTER</a></h5>
+				<br>
+				<h6 class="text-muted">Comedy, Action</h6>
+				<span class="col_red">
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star"></i>
+				 <i class="fa fa-star-o"></i>
+				</span>
+			   </div>
+			  </div>
+			  <div class="col-md-3 p-0 col-3">
+			   <div class="upcome_2i_lastir pt-3">
+			     <span><a class="col_red rounded" href="#"><i class="fa fa-play-circle"></i></a></span>
+			   </div>
+			  </div>
+			 </div>
+		   </div>
+		 </div>
+	   </div>
+    </div>
+
+</div>
+  </div>
+ </div>
+</section>
+
+<section id="release">
+ <div class="release_m clearfix">
+   <div class="container-xl">
+     <div class="row release_1">
+	  <div class="col-md-7">
+	   <div class="release_1i">
+	   
+	   </div>
+	  </div>
+<!-- Card Movie End -->
+	
+<!-- Forms Start -->
+<section id="subs" class="pt-5 pb-5 bg_red">
+ <div class="container-xl">
+   <div class="row subs_1">
+    <div class="col-md-4">
+	 <div class="subs_1l">
+	  <h4 class="text-white mb-0 mt-2">GET UPDATE SIGN UP NOW !</h4>
+	 </div>
+	</div>
+	<div class="col-md-8">
+	 <div class="subs_1r">
+	   <div class="input-group">
+				<input type="text" class="form-control bg-transparent" placeholder="Enter Your Email">
+				<span class="input-group-btn">
+					<button class="btn btn-primary bg-white col_red" type="button">
+						Submit </button>
+				</span>
+		</div>
+	 </div>
+	</div>
+   </div>
+ </div>
+</section>
+<!-- Forms End -->
+
+<!-- Footer Start -->
+<section id="footer" class="p_3">
+ <div class="container-fluid">
+   <div class="row footer_1">
+     <div class="col-md-2">
+	  <div class="footer_1i">
+	   <h6 class="text-white fw-bold">GENRE</h6>
+	   <hr class="line mb-4">
+	   <div class="row footer_1i_small">
+	   <h6 class="col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i><a class="text-muted" href="#">Action</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">Comedy</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">Horor</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">Fantasy</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">Romance</a></h6>
+	   </div>
+	  </div>
+	 </div>
+	 <div class="col-md-4">
+	  <div class="footer_1i">
+	   <h6 class="text-white fw-bold">Genres</h6>
+	   <hr class="line mb-4">
+	   <ul class="mb-0">
+	    <li class="d-inline-block"><a class="d-block" href="#">Romance</a></li>
+		<li class="d-inline-block"><a class="d-block" href="#">Drama</a></li>
+		<li class="d-inline-block"><a class="d-block" href="#">Comedy</a></li>
+		<li class="d-inline-block"><a class="d-block" href="#">Action</a></li>
+		<li class="d-inline-block"><a class="d-block" href="#">Anime</a></li>
+		<li class="d-inline-block"><a class="d-block" href="#">Superheroes</a></li>
+		<li class="d-inline-block"><a class="d-block" href="#">horor</a></li>
+	   </ul>
+	  </div>
+	 </div>
+	 <div class="col-md-2">
+	  <div class="footer_1i">
+	   <h6 class="text-white fw-bold">BY STUDIO</h6>
+	   <hr class="line mb-4">
+	   <div class="row footer_1i_small">
+	   <h6 class="col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">UNIVERSAL STUDIOS</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">MARVELS</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">DC STUDIOS</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">ILLUMINATION</a></h6>
+	   <h6 class="mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">DISNEY</a></h6>
+	   <h6 class="mb-0 mt-2 col-md-12 col-6"><i class="fa fa-circle me-1 col_red font_10"></i> <a class="text-muted" href="#">DREAMWORKS STUDIOS</a></h6>
+	   </div>
+	  
+	  </div>
+	 </div>
+	 <div class="col-md-4">
+	  <div class="footer_1i">
+	   <h6 class="text-white fw-bold">SUBSCRIPTION</h6>
+	   <hr class="line mb-4">
+	   <p class="text-muted">Subscribe your Email address for latest news & updates.</p>
+	   <input class="form-control bg-transparent" placeholder="Enter Email Address" type="text">
+	   <h6 class="mb-0 mt-4"><a class="button_1 pt-3 pb-3" href="#">Submit <i class="fa fa-check-circle ms-1"></i> </a></h6>
+	  </div>
+	 </div>
+   </div>
+ </div>
+</section>
+
+<section id="footer_b" class="pt-3 pb-3">
+ <div class="container-xl">
+   <div class="row footer_b1">
+   <div class="col-md-8">
+    <div class="footer_b1l">
+	 <p class="mb-0 fs-6 text-muted mt-1">© 2023 PILEM All Rights Reserved | Design by Gede Jason Erlangga Sastrawan
+	</div>
+   </div>
+   <div class="col-md-4">
+    <div class="footer_b1r text-end">
+	  <ul class="social-network social-circle mb-0">
+					<li><a href="#" class="icoRss" title="Rss"><i class="fa fa-youtube-play"></i></a></li>
+					<li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-facebook"></i></a></li>
+				</ul>
+	</div>
+   </div>
+  </div>
+ </div>
+ <!-- Footer End -->
+</section>
+</body>
+</html>
